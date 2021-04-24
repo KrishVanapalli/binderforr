@@ -1,4 +1,6 @@
-library(dplyr)
-iris
+library(dplyr, warn.conflicts = FALSE)
+print(iris)
 library(ggplot2)
-ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point(size=3)
+p <- ggplot(data=iris, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) + geom_point(size=3)
+p <- p + geom_point()
+print(p)
