@@ -1,1 +1,2 @@
-install.packages(c("readr", "dplyr", "ggplot2"))
+install.packages("ggplot2", repos="https://cran.rstudio.com")
+install.packages("dplyr", repos="https://cran.rstudio.com")
